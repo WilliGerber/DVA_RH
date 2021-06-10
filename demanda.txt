@@ -1,0 +1,72 @@
+Cadatro de empresas
+    nome
+    cidade
+    
+cargos
+    nome
+    id_setor
+    cargo_superior->nullable
+    id_empresa
+    date(data_revisão)
+    descricao_sumaria->2000carac
+    descricao_detalhada->2000carac
+    experiencia_acumulada
+
+    colaborador_competencias_tecnicas (pesquisar muitos para muitos laravell - belongs to many)
+        id_colaborador
+        id_competencia_tecnica
+
+    colaborador_competencias_complementares (pesquisar muitos para muitos laravell - belongs to many)
+        id_colaborador
+        id_competencia_complementar
+
+extra_curricular_cursos
+    nome
+    descricao
+    data_conclusao
+    certificado->file
+    carga_horaria
+
+colaboradores
+    nome
+    data_nascimento
+    id_hierarquia
+    id_setor
+    data_admissão
+    id_cargo
+    sexo
+    estado_civil
+    foto
+
+    colaborador_cursos_extra_curriculares (pesquisar muitos para muitos laravell - belongs to many)
+
+competencias_tecnicas
+    nome
+    descricao
+    id_setor
+
+competencias_comportamentais
+    nome
+    descricao
+
+setor_avaliacao_itens
+    nome
+    descricao
+    id_setor
+
+pontos_fortes
+    nome
+    descricao
+
+pontos_melhorias
+    nome
+    descricao
+
+permissoes
+    nome
+    descricao
+
+
+
+
+        
